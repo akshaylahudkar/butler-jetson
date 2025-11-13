@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Test files and outputs
+test_frame.jpg
+test_gst.jpg
+snapshot_*.jpg
+*.avi
+*.mp4
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jetson specific
+*.cache/
+.nv/

@@ -221,7 +221,7 @@ class MockVisionStream:
             width=self.width,
             height=self.height,
             framerate=30,
-            use_gstreamer=False  # Use V4L2 for simplicity in mock mode
+            use_gstreamer=True  # IMX219 requires GStreamer on Jetson
         )
 
         return self.camera.open()

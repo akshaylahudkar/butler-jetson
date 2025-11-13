@@ -51,10 +51,10 @@ class IMX219Camera:
             f"width={self.width}, height={self.height}, "
             f"format=NV12, framerate={self.framerate}/1 ! "
             f"nvvidconv ! "
-            f"video/x-raw, format=BGRx ! "
+            f"video/x-raw, width={self.width}, height={self.height}, format=BGRx ! "
             f"videoconvert ! "
             f"video/x-raw, format=BGR ! "
-            f"appsink"
+            f"appsink max-buffers=1 drop=true sync=false"
         )
         return pipeline
 
