@@ -4,7 +4,27 @@ Vision-enabled butler robot for Jetson Orin Nano with IMX219 camera support.
 
 ## 🚀 Quick Start
 
-**Ready to go?** See [QUICKSTART.md](QUICKSTART.md) for 5-minute setup.
+### First Time Setup on Jetson
+
+**New to VILA?** See [DEPLOY.md](DEPLOY.md) for complete deployment guide.
+
+```bash
+# 1. Run automated setup
+./setup_vila.sh
+
+# 2. Verify everything is ready
+./preflight_check.sh
+
+# 3. Quick test (camera + vision)
+./test_vila.sh
+
+# 4. Run VILA vision stream
+./run_vision_stream.sh
+```
+
+### Already Set Up?
+
+**Ready to go?** See [QUICKSTART.md](QUICKSTART.md) for usage examples.
 
 ```bash
 # Test your camera
@@ -23,6 +43,13 @@ Vision-enabled butler robot for Jetson Orin Nano with IMX219 camera support.
 - [`camera_test.py`](camera_test.py) - Camera diagnostic tool
 - [`camera_stream.py`](camera_stream.py) - IMX219 camera handler with GStreamer
 - [`vision_stream.py`](vision_stream.py) - VILA VLM integration for real-time vision
+- [`test_capture_v2.py`](test_capture_v2.py) - Simple camera capture test
+- [`test_vision_simple.py`](test_vision_simple.py) - Basic vision analysis test
+
+### Setup & Deployment Scripts
+- [`setup_vila.sh`](setup_vila.sh) - Automated VILA installation
+- [`preflight_check.sh`](preflight_check.sh) - System validation before running VILA
+- [`test_vila.sh`](test_vila.sh) - VILA integration test suite
 
 ### Quick Launch Scripts
 - [`test_camera.sh`](test_camera.sh) - Quick camera test
@@ -30,7 +57,9 @@ Vision-enabled butler robot for Jetson Orin Nano with IMX219 camera support.
 - [`run_vision_stream.sh`](run_vision_stream.sh) - Start VILA vision processing
 
 ### Documentation
-- [`QUICKSTART.md`](QUICKSTART.md) - 5-minute quick start guide
+- [`DEPLOY.md`](DEPLOY.md) - **Complete deployment guide** ⭐
+- [`QUICKSTART.md`](QUICKSTART.md) - Usage examples and tips
+- [`SETUP_NOTES.md`](SETUP_NOTES.md) - Camera validation notes
 - [`README.md`](README.md) - Full setup guide (this file)
 - [`requirements.txt`](requirements.txt) - Python dependencies
 
