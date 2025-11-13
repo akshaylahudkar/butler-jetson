@@ -1,4 +1,42 @@
-# butler-jetson# VILA VLM Setup Guide for Jetson Orin Nano Super
+# butler-jetson
+
+Vision-enabled butler robot for Jetson Orin Nano with IMX219 camera support.
+
+## 🚀 Quick Start
+
+**Ready to go?** See [QUICKSTART.md](QUICKSTART.md) for 5-minute setup.
+
+```bash
+# Test your camera
+./test_camera.sh
+
+# Start camera stream
+./run_camera_stream.sh
+
+# Start VILA vision
+./run_vision_stream.sh
+```
+
+## 📁 Project Files
+
+### Python Implementation
+- [`camera_test.py`](camera_test.py) - Camera diagnostic tool
+- [`camera_stream.py`](camera_stream.py) - IMX219 camera handler with GStreamer
+- [`vision_stream.py`](vision_stream.py) - VILA VLM integration for real-time vision
+
+### Quick Launch Scripts
+- [`test_camera.sh`](test_camera.sh) - Quick camera test
+- [`run_camera_stream.sh`](run_camera_stream.sh) - Start camera streaming
+- [`run_vision_stream.sh`](run_vision_stream.sh) - Start VILA vision processing
+
+### Documentation
+- [`QUICKSTART.md`](QUICKSTART.md) - 5-minute quick start guide
+- [`README.md`](README.md) - Full setup guide (this file)
+- [`requirements.txt`](requirements.txt) - Python dependencies
+
+---
+
+# VILA VLM Setup Guide for Jetson Orin Nano Super
 
 Complete step-by-step guide to set up VILA 1.5 3B Vision-Language Model on your Jetson Orin Nano.
 

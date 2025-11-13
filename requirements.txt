@@ -1,0 +1,15 @@
+# Python Requirements for Butler Jetson Vision System
+# For use on Jetson Orin Nano with IMX219 camera
+
+# Core dependencies
+numpy>=1.19.0
+opencv-python>=4.5.0
+
+# Note: nano_llm and VILA dependencies are handled by jetson-containers
+# When running inside jetson-containers, these are pre-installed:
+# - nano_llm
+# - mlc-llm
+# - VILA models
+
+# Optional: For standalone testing without containers
+# jetson-stats  # Install with: sudo pip3 install jetson-stats
